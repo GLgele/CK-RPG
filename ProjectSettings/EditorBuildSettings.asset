@@ -8,4 +8,14 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 1e021c3bfe5900f4f8e731343686a6b5,
+      type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 1a6ac81019e72274e9d8580001af2948,
+      type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 8b5e460e392fdbf41a373b3dfd86859c,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 44af8a1769c62bb499889b78a12250ec,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 1ca3f6001d2d4d24c85aadc726c1f9c5,
+      type: 2}
