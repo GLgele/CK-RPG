@@ -1,4 +1,6 @@
-﻿using Unity.Cloud.UserReporting.Plugin;
+﻿using System;
+using System.Collections.Generic;
+using Unity.Cloud.UserReporting.Plugin;
 using UnityEngine;
 using UnityEngine.XR;
 
@@ -10,17 +12,31 @@ public class UserReportingXRExtensions : MonoBehaviour
 {
     #region Methods
 
+    private bool isRunning()
+    {
+        var xrDisplaySubsystems = new List<XRDisplaySubsystem>();
+        SubsystemManager.GetInstances<XRDisplaySubsystem>(xrDisplaySubsystems);
+        foreach (var xrDisplay in xrDisplaySubsystems)
+        {
+            if (xrDisplay.running)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private void Start()
     {
-        if (XRDevice.isPresent)
+        if (isRunning())
         {
-            UnityUserReporting.CurrentClient.AddDeviceMetadata("XRDeviceModel", XRDevice.model);
+            UnityUserReporting.CurrentClient.AddDeviceMetadata("XRDeviceModel/XRDeviceName", XRSettings.loadedDeviceName);
         }
     }
 
     private void Update()
     {
-        if (XRDevice.isPresent)
+        if (isRunning())
         {
             int droppedFrameCount;
             if (XRStats.TryGetDroppedFrameCount(out droppedFrameCount))
