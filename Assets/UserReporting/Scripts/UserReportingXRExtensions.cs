@@ -30,7 +30,7 @@ public class UserReportingXRExtensions : MonoBehaviour
     {
         if (isRunning())
         {
-            UnityUserReporting.CurrentClient.AddDeviceMetadata("XRDeviceModel/XRDeviceName", XRSettings.loadedDeviceName);
+            UnityUserReporting.CurrentClient.AddDeviceMetadata("XRLoadedDeviceName", XRSettings.loadedDeviceName);
         }
     }
 
