@@ -25,7 +25,6 @@ public class UserReportingXRExtensions : MonoBehaviour
         }
         return false;
     }
-
     private void Start()
     {
         if (isRunning())

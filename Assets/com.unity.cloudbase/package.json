@@ -1,0 +1,14 @@
+{
+	"category": "ConnectGame/Unity", 
+    "keywords": [
+        "cloudbase", 
+        "unity"
+    ], 
+	"name": "com.unity.cloudbase",
+	"displayName": "CloudBase",
+	"version": "1.0.3-preview",
+	"unity": "2019.3",
+    "description": "Unity CloudBase is a serverless cloud service that concentrated on minigames and mobile games. Game developers can quickly and effectively build multiplay games empowered by Unity CloudBase.", 
+	"dependencies": {
+	}
+}
