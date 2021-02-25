@@ -30,7 +30,7 @@ namespace RPGM.Gameplay
 
         public void OnTriggerEnter2D(Collider2D collider)
         {
-            MessageBar.Show($"You collected: {name} x {count}");
+            MessageBar.Show($"ƒ„ªÒµ√¡À: {name} x {count}");
             model.AddInventoryItem(this);
             UserInterfaceAudio.OnCollect();
             gameObject.SetActive(false);
