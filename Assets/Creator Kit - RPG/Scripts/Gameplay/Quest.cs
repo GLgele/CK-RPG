@@ -120,7 +120,7 @@ namespace RPGM.Gameplay
         {
             foreach (var i in rewardItems)
             {
-                MessageBar.Show($"You collected: {i.name} x {i.count}");
+                MessageBar.Show($"ƒ„ªÒµ√¡À: {i.name} x {i.count}");
                 model.AddInventoryItem(i);
                 UserInterfaceAudio.OnCollect();
                 i.gameObject.SetActive(false);
