@@ -42,7 +42,7 @@ public class ReadmeEditor : Editor {
 		method.Invoke(null, new object[]{Path.Combine(Application.dataPath, "TutorialInfo/Layout.wlt"), false});
 	}
 	
-	[MenuItem("Tutorial/Show Tutorial Instructions")]
+	[MenuItem("教程 Tutorial/显示教程 Tutorial说明")]
 	static Readme SelectReadme() 
 	{
 		var ids = AssetDatabase.FindAssets("Readme t:Readme");
